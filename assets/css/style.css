@@ -27,9 +27,17 @@
 
 body {
     background-color: #A7B9D1;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
+.borderOrange {
+    border: 1px solid orange;
+}
+
+.testStyle {
+    padding: 0px;
+    margin: 0px;
+}
 
 .headerStyle {
     border-bottom: 4px solid #897653;
@@ -37,13 +45,14 @@ body {
 }
 
 #signatureImage {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
-    margin: 0px 25%;
+    margin: 5% 5%;
 }
 
 .content {
     font-family: lato, Arial, sans-serif;
+    margin: 5% 2%;
     background-color: #fff;
     border: 2px solid #897653;
     /* margin: 1em auto;
