@@ -90,7 +90,6 @@ p {
     margin: 2em;
 }
 
-
 .portfolioButton {
     background-color:#897653;
     border: 1px solid #897653
@@ -111,6 +110,13 @@ p {
 
 #projectList {
     width: 100%;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: #36424E;
+}
+
+.subitem {
+    background-color: #BACEE6;
+    color: #36424E;
 }
 
 #screenshot {
@@ -122,9 +128,6 @@ p {
 /* Footer All Pages */
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     height: 50px;
     border-top: 4px solid #E6D6BA;
