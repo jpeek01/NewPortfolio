@@ -27,146 +27,96 @@
 
 body {
     background-color: #A7B9D1;
-    /* padding-bottom: 50px; */
 }
 
 .borderOrange {
     border: 1px solid orange;
 }
 
-.testStyle {
-    padding: 0px;
-    margin: 0px;
+.top {
+    width: 100%;
+    height: 20px;
+    background-color: #36424E;
+    border-bottom: 4px solid #897653;
 }
 
 .headerStyle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     border-bottom: 4px solid #897653;
-    background-color: #F3FDFE;
+    background-color: white;
 }
 
 #signatureImage {
-    max-width: 50%;
-    height: auto;
-    margin: 5% 5%;
+    width: 50%;
+    height: 50%;
+    margin: .5em;
+}
+
+.linkedinIcon{
+    margin: auto 10%;
+    text-decoration: none;
+}
+
+.linkedinIcon:hover{
+    text-decoration: none;
 }
 
 .content {
-    font-family: lato, Arial, sans-serif;
-    margin: 5% 2%;
+    margin: 1em 2em;
+    padding: 1em;
     background-color: #fff;
-    border: 2px solid #897653;
-    /* margin: 1em auto;
-    padding: 2em 4em;    */
-}
-
-h1 {
-    font-size: 3em;
-    color: #36424E;
-    padding-bottom: .5em;
-    border-bottom: 2px solid #897653;
-}
-
-p {
-    font-size: 1em;
-    padding: .5em 0em;
+    border: 4px solid #897653;
+    overflow: auto;
 }
 
 .image1 {
     float: left;
-    max-width: 100%;
-    height: auto;
-    margin-right: .5em;
-    border: 2px solid #897653;
+    margin: .5em 1.5em .5em .5em;
+    border: 4px solid #897653;
 }
 
-.image2 {
-    float: right;
-    max-width: 100%;
-    height: auto;
-    margin-left: .5em;
-    border: 2px solid #897653;
+p {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    padding: .25em;
+}
+
+#contact {
+    margin: 2em;
 }
 
 
-/* Portfolio Page Grid */
-
-/*** rows ***/
-
-#portfolioCellsContainer {
-    width: 65%;
+.portfolioButton {
+    background-color:#897653;
+    border: 1px solid #897653
 }
 
-#topRow {
-    display: inline-block;
-    margin: 0px;
+.portfolioButton:hover {
+    color: #897653;
+    background-color:#E6D6BA;
+    border: 1px solid #897653
 }
 
-#middleRow {
-    display: inline-block;
-    margin: 0px;
-}
-
-#bottomRow {
-    display: inline-block;
-    margin: 0px;
-}
-
-/*** columns ***/
-
-#topLeft {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-#topRight {
-    display: inline-block;
-
-}
-
-#middleLeft {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-#middleRight {
-    display: inline-block;
-}
-
-#bottomLeft {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-#bottomRight {
-    display: inline-block;
-}
-
-#portfolioImages {
-    max-width: 100%;
-    height: auto;
-    margin: 0px;
-    padding: 0px;
-}
-
-.cellText {
-    position: relative;
-    bottom: 30px;
-    font-family: Catamaran, Arial, sans-serif;
-    font-size: 12pt;
-    text-align: center;
+#projects {
     width: 100%;
-    height: 30%;
-    margin: auto;
-    padding: 0px;
-    color: white;
-    background-color: darkorange;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-/* Photo gallery off the Portfolio page */
+#projectList {
+    width: 100%;
+}
 
-#photogallery {
-    width: 65%;
-    height: auto;
+#screenshot {
+    max-width: 40%;
+    max-height: 40%;
+    margin: auto;
 }
 
 /* Footer All Pages */
@@ -188,75 +138,42 @@ p {
     margin: 12px 20px;
 }
 
+@media screen and (max-width: 1200px) and (min-width: 900px) {
 
-
-
-/* navbar */
-.navbar-default {
-    background-color: #F8F8F8;
-    border-color: #E7E7E7;
-}
-/* Title */
-.navbar-default .navbar-brand {
-    color: #777;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #5E5E5E;
-}
-/* Link */
-.navbar-default .navbar-nav > li > a {
-    color: #777;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #333;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
-    background-color: #E7E7E7;
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-    color: #555;
-    background-color: #D5D5D5;
-}
-/* Caret */
-.navbar-default .navbar-nav > .dropdown > a .caret {
-    border-top-color: #777;
-    border-bottom-color: #777;
-}
-.navbar-default .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: #333;
-    border-bottom-color: #333;
-}
-.navbar-default .navbar-nav > .open > a .caret,
-.navbar-default .navbar-nav > .open > a:hover .caret,
-.navbar-default .navbar-nav > .open > a:focus .caret {
-    border-top-color: #555;
-    border-bottom-color: #555;
-}
-/* Mobile version */
-.navbar-default .navbar-toggle {
-    border-color: #DDD;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background-color: #DDD;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #CCC;
-}
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
+    .headerStyle {
+        justify-content: space-evenly;
     }
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-          color: #333;
+
+    #signatureImage {
+        width: 25%;
+        height: 25%;
+    }
+    
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1200px) {
+
+    .headerStyle {
+        justify-content: space-evenly;
+    }
+
+    #signatureImage {
+        width: 20%;
+        height: 20%;
     }
 }
+
+@media screen and (max-width: 2200px) and (min-width: 1800px) {
+
+    .headerStyle {
+        justify-content: space-evenly;
+    }
+
+    #signatureImage {
+        width: 15%;
+        height: 15%;
+    }
+}
+
+
+

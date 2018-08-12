@@ -31,60 +31,84 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran|Lato:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Catamaran|Lato:400i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark mainNav sidebarNavigation" data-sidebarClass="navbar-dark bg-dark ">
+    <!-- <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark mainNav sidebarNavigation" data-sidebarClass="navbar-dark bg-dark ">
         <div class="flexContainer">
             <button class="navbar-toggler left-navbar-toggle " type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse navMenuItem" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active menuItem"><a href="index.html">Home</a></li>
-                    <li class="active menuItem"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="active menuItem"><a href="contact.html">Contact</a></li>
+                    <li class="active "><a href="index.html" class="menuItem">Home</a></li>
+                    <li class="active"><a href="resume.html" class="menuItem">Resume</a></li>
+                    <li class="active"><a href="contact.html" class="menuItem">Contact</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <div class="container">
-        <!-- <div class="row headerStyle">
-            <div class="col-lg-6 headerMenu">
-
-            </div>
-        </div>-->  <!-- End Header and navigation -->
+    </nav> -->
+    <div class="top"></div>
+    <div class="headerStyle">
+        <img src="assets/images/james_peek.png" id="signatureImage" alt="james signature image">
+        <a href="https://www.linkedin.com/in/james-peek-7a005a16/" class="fab fa-linkedin fa-3x linkedinIcon" target="_blank"></a>
+    </div>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-md-2 col-sm-2"></div>
-            <div class="col-lg-6 col-md-8 col-sm-8 content">
+        </div>  <!-- End Header and navigation -->
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-1"></div>
+            <div class="col-lg-8 col-md-8 col-sm-10 content">
 
-                <img src="assets/images/james_peek.png" id="signatureImage" alt="james signature image">
-                
-                <br>
-
-                <img src="assets/images/kayak_small.jpg" class="image1" alt="Picture of James Peek in a kayak on a river">
+                <img src="assets/images/james_thumbnail.jpg" class="image1" alt="Picture of James Peek" >
 
                 <p>
-                    As an Information Technology expert with over twenty years of experience working on small to enterprise level projects, I have experience in managing and leading software development teams with excellent technical knowledge and the ability to communicate with both business and technical team members
+                    As an Information Technology expert with over twenty years of experience working 
+                    on small to enterprise level projects, I have experience in managing and leading software 
+                    development teams with excellent technical knowledge and the ability to 
+                    communicate with both business and technical team members
+                </p>
+                <p>
+                    I am changing directions slightly to move in a more technical direction as a software developer. 
+                    My goal to finish the Full Stack Web Development program at Southern Methodist University and start 
+                    work as a programming in the software industry. 
+                </p>
+                <p>                    
+                    Outside of work and school, 
+                    I enjoy an active lifestyle outdoors camping, backpacking, and kayaking.
+                </p>
 
+                <div id="contact">
+                    <button type="button" id="resumeButton" class="btn btn-secondary portfolioButton" onclick="location.href = 'assets/images/James_Peek_Resume_2018.pdf';">resume</button>
+                    <button type="button" id="resumeButton" class="btn btn-secondary portfolioButton" onclick="location.href = 'mailto:jpeek01@gmail.com';">email</button>
+                </div>
+
+                <div id="projects">
+                    <div id="github">
+                        <h4>SMU Bootcamp Projects</h4>
+                        <ul class="list-group" id="projectList">
+                            <li class="list-group-item"><a href="https://github.com/jpeek01" target="_blank">GitHub</a></li>
+                            <li class="list-group-item"><a href="https://truva-aa8da.firebaseapp.com/index.html" target="_blank">Truva</a></li>
+                                <li class="list-group-item"><a href="https://github.com/jpeek01/testProject" target="_blank">Github link: Truva</a></li>
+                            <li class="list-group-item"><a href="https://jpeek01.github.io/TrainSchedule/" target="_blank">Train Schedule</a></li>
+                                <li class="list-group-item"><a href="https://github.com/jpeek01/TrainSchedule" target="_blank">Github link: Train Schedule</a></li>
+                            <li class="list-group-item"><a href="https://jpeek01.github.io/giffly/" target="_blank">Giffly</a></li>
+                                <li class="list-group-item"><a href="https://github.com/jpeek01/giffly" target="_blank">Github link: Giffly</a></li>
+                        </ul>
+                    </div>
+                    <div id="screenshot">
+                        <img src="assets/images/truva_screenshot_sm.png" alt="screenshot of mobile app">
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-2 col-sm-2"></div>
+            <div class="col-lg-2 col-md-2 col-sm-1"></div>
         </div> <!-- End Content -->
-
-        <!-- <footer class="footer">
-            <div class="container">
-                <p class="text-right copyRightStyle">&copy; James Peek 2018</p>
-            </div>
-        </footer> -->
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/menu.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
